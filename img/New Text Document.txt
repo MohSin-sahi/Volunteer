@@ -1,0 +1,12 @@
+(--primary-color-brand, #7333FC)
+(--text-color-t-1, #222151)
+(--grey-color-bg-1, #F9F9FB)
+(--text-color-t-2, #2F3557)
+color: #000;
+background: #F4F5F8;
+color: #333;
+border: 1px solid #A0A3BD
+
+
+font-family: Open Sans;
+

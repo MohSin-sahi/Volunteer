@@ -1,0 +1,115 @@
+.pro-rec {
+  grid-column: full-start / full-end;
+
+  background-color: $color-text-1;
+  padding: 6rem 6rem 12rem 0rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 6rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    padding: 6rem 0rem;
+  }
+
+  &__text-box {
+    color: $color-grey-light-1;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 3rem;
+    }
+    h4 {
+      color: $color-grey-light-1;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    h3 {
+      color: $color-grey-light-1;
+      margin-bottom: 1.5rem;
+      width: 80%;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+    margin-bottom: 3rem;
+    width: 70%;
+  }
+
+  &__list {
+    border-top: 1px solid rgba($color-grey-light-2, 0.1);
+    font-size: 1.4rem;
+    list-style: disc;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    gap: 3rem;
+    padding: 2rem 0rem 2rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__icon {
+    fill: $color-grey-light-1;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+  }
+  &__picture {
+    width: 100%;
+  }
+  &__outer {
+    position: relative;
+    padding: 4rem 4rem 4rem 0rem;
+    border-bottom-right-radius: 10px;
+    background-color: rgba($color-grey-light-1, 0.09);
+  }
+  &__round {
+    border-right: 1px solid $color-grey-dark-2;
+    border-bottom: 1px solid $color-grey-dark-2;
+    border-top: 1px solid $color-grey-dark-2;
+    padding: 2rem 2rem 0rem 0rem;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+  }
+
+  &__img-box {
+    border-right: 1px solid $color-grey-dark-2;
+    border-top: 1px solid $color-grey-dark-2;
+    background-color: $color-grey-light-1;
+    border-top-right-radius: 10px;
+
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__join {
+    border: 1px solid $color-grey-dark-2;
+    padding: 0.5rem 3rem;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  &__under {
+    width: 80%;
+    height: 4rem;
+    background-color: rgba($color-grey-light-1, 0.09);
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
